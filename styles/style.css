@@ -1,0 +1,80 @@
+@font-face {
+    font-family: "Lobster-Regular";
+    src: url("../src/fonts/Lobster-Regular.ttf") format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: "NotoSerif-Regular";
+    src: url("../src/fonts/NotoSerif-Regular.ttf") format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: "NotoSerif-ExtraLightItalic";
+    src: url("../src/fonts/NotoSerif-ExtraLightItalic.ttf") format('truetype');
+    font-style: italic;
+    font-weight: normal;
+}
+
+body {
+    font-family: "NotoSerif-Regular", Arial, sans-serif;
+    /*text-align: center;*/
+    background-color: rgba(224, 221, 209, 0.363);
+    /**/
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently
+                                not supported by any browser */
+
+    padding: 0;
+    margin: 0;
+}
+
+header  {
+    box-shadow: 1px 0px 2px #000000;
+    background-color:#ffffff;
+    height: 160px;
+    font-family: "Lobster-Regular", Arial, sans-serif;
+    text-align: center;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#logo{
+    height: 160px;
+}
+header h1{
+    display:inline-block;
+    font-size: 60px;
+    color:#753006;
+}
+header nav a {
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 2px #823505 solid;
+    border-radius: 20px;
+    text-decoration: none;
+    color: rgb(145 117 74);
+    background-color: antiquewhite;
+    padding: 10px 30px;
+}
+
+main  {
+    background-color: rgb(161, 196, 66);
+    min-height: 2000px;
+}
+
+footer  {
+    background-color: rgb(26, 36, 180);
+    height: 100px;
+    font-family: "NotoSerif-ExtraLightItalic", Arial, sans-serif;
+    text-align: center;
+
+}
