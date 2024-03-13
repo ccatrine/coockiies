@@ -20,7 +20,6 @@
 body {
     font-family: "NotoSerif-Regular", Arial, sans-serif;
     /*text-align: center;*/
-    background-color: rgba(224, 221, 209, 0.363);
     /**/
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none;   /* Chrome/Safari/Opera */
@@ -32,10 +31,10 @@ body {
 
     padding: 0;
     margin: 0;
+    background-color: rgb(255 247 243);
 }
 
 header  {
-    box-shadow: 1px 0px 2px #000000;
     background-color:#ffffff;
     height: 160px;
     font-family: "Lobster-Regular", Arial, sans-serif;
@@ -44,6 +43,11 @@ header  {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top:0;
+    width: 100%;
+    box-shadow: 7px 3px 8px 3px #ffe3d3;
+    z-index:1000; 
 
 }
 #logo{
@@ -67,10 +71,28 @@ header nav a {
 }
 
 main  {
-    background-color: rgb(161, 196, 66);
+ 
     min-height: 2000px;
+    margin-top: 160px;
+    z-index:100; 
 }
 
+#slider{
+    position:relative;
+   max-width: 1920; 
+
+}
+#slider img {
+    position:absolute;
+    width: 100%;
+    z-index: 0;
+    opacity: 0;
+}
+#slider img:first-child{
+    z-index:1; 
+    opacity: 1;
+
+}
 footer  {
     background-color: rgb(26, 36, 180);
     height: 100px;
